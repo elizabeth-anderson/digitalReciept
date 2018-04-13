@@ -9,9 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    var folders = [String]()
+    var folders = [String()]
 
-
+    @IBOutlet weak var foldersTextField: UITextField!
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -26,7 +27,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
-        cell?.textLabel?.text = folders[indexPath.row]
+        foldersTextField.text = folders[indexPath.row]
         return cell!
     }
     
@@ -35,16 +36,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let alert = UIAlertController(title: "add a folder", message: nil, preferredStyle: .alert)
         alert.addTextField
         {
-            (textField) in textField.placeholder = "folder"
+            (textField) in textField.placeholder = "folder title"
         }
         
         let cancelAction = UIAlertAction(title: "cancel", style: .cancel, handler: nil)
         let insertAction = UIAlertAction(title: "add", style: .default)
         { (action) in
-            let folderTextField = alert.textFields![0] as UITextField
-            let folder = folderTextField.text
-            self.folders.append(folder!)
-            self.foldersTableView.reloadData()
+//            self.foldersTextField = alert.textFields![0] as UITextField
+//            let folder = self.foldersTextField.text
+//            self.folders.append(folder!)
+//            self.foldersTableView.reloadData()
         }
         
         alert.addAction(cancelAction)
