@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		3FD151EC207BD89300835608 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD151EB207BD89300835608 /* AppDelegate.swift */; };
-		3FD151EE207BD89300835608 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD151ED207BD89300835608 /* ViewController.swift */; };
 		3FD151F1207BD89300835608 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FD151EF207BD89300835608 /* Main.storyboard */; };
 		3FD151F3207BD89300835608 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FD151F2207BD89300835608 /* Assets.xcassets */; };
 		3FD151F6207BD89300835608 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FD151F4207BD89300835608 /* LaunchScreen.storyboard */; };
 		3FD15201207BD89300835608 /* digitalRecieptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD15200207BD89300835608 /* digitalRecieptTests.swift */; };
 		3FD1520C207BD89300835608 /* digitalRecieptUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD1520B207BD89300835608 /* digitalRecieptUITests.swift */; };
-		3FD1521C207E7B3300835608 /* recieptsClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD1521B207E7B3300835608 /* recieptsClass.swift */; };
 		3FD1521E207E7C1400835608 /* picturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD1521D207E7C1400835608 /* picturesViewController.swift */; };
+		3FD152202085156600835608 /* FoldersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD1521F2085156600835608 /* FoldersTableViewController.swift */; };
+		3FD15222208516B100835608 /* addFolderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD15221208516B100835608 /* addFolderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 /* Begin PBXFileReference section */
 		3FD151E8207BD89300835608 /* digitalReciept.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = digitalReciept.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FD151EB207BD89300835608 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3FD151ED207BD89300835608 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3FD151F0207BD89300835608 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3FD151F2207BD89300835608 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FD151F5207BD89300835608 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,8 +48,9 @@
 		3FD15207207BD89300835608 /* digitalRecieptUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = digitalRecieptUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FD1520B207BD89300835608 /* digitalRecieptUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = digitalRecieptUITests.swift; sourceTree = "<group>"; };
 		3FD1520D207BD89300835608 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3FD1521B207E7B3300835608 /* recieptsClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recieptsClass.swift; sourceTree = "<group>"; };
 		3FD1521D207E7C1400835608 /* picturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = picturesViewController.swift; sourceTree = "<group>"; };
+		3FD1521F2085156600835608 /* FoldersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoldersTableViewController.swift; sourceTree = "<group>"; };
+		3FD15221208516B100835608 /* addFolderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addFolderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +102,10 @@
 			isa = PBXGroup;
 			children = (
 				3FD151EB207BD89300835608 /* AppDelegate.swift */,
-				3FD151ED207BD89300835608 /* ViewController.swift */,
 				3FD151EF207BD89300835608 /* Main.storyboard */,
+				3FD1521F2085156600835608 /* FoldersTableViewController.swift */,
+				3FD15221208516B100835608 /* addFolderViewController.swift */,
 				3FD1521D207E7C1400835608 /* picturesViewController.swift */,
-				3FD1521B207E7B3300835608 /* recieptsClass.swift */,
 				3FD151F2207BD89300835608 /* Assets.xcassets */,
 				3FD151F4207BD89300835608 /* LaunchScreen.storyboard */,
 				3FD151F7207BD89300835608 /* Info.plist */,
@@ -265,10 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FD151EE207BD89300835608 /* ViewController.swift in Sources */,
+				3FD15222208516B100835608 /* addFolderViewController.swift in Sources */,
+				3FD152202085156600835608 /* FoldersTableViewController.swift in Sources */,
 				3FD1521E207E7C1400835608 /* picturesViewController.swift in Sources */,
 				3FD151EC207BD89300835608 /* AppDelegate.swift in Sources */,
-				3FD1521C207E7B3300835608 /* recieptsClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
