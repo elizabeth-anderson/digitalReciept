@@ -11,22 +11,29 @@ import UIKit
 class addFolderViewController: UIViewController {
 
     var name: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     @IBOutlet weak var folderName: UITextField!
     
-  
+//  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!)
+//  {
+//        if segue.identifier == "doneSegue"
+//        {
+//            name = folderName.text!
+//        }
+//    }
     
-  func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!)
-  {
+ func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         if segue.identifier == "doneSegue"
         {
             name = folderName.text!
         }
+
     }
+    
     
     
     

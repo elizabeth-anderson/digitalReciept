@@ -11,6 +11,7 @@ import Photos
 class picturesViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout
 {
 
+    let image = [UIImage]()
     @IBOutlet weak var picturesCollectionView: UICollectionView!
     var imageArray = [UIImage]()
     @IBOutlet weak var picturesCell: UICollectionViewCell!
