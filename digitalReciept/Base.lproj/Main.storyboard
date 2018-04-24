@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AUv-ea-uqK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -57,9 +57,9 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fJp-1a-pQC" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="nw0-PZ-tLH" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2260" y="-32.833583208395808"/>
+            <point key="canvasLocation" x="2660" y="27"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Folders-->
         <scene sceneID="hby-uq-efB">
             <objects>
                 <tableViewController title="Folders" id="wK6-hz-LV3" customClass="FoldersTableViewController" customModule="digitalReciept" customModuleProvider="target" sceneMemberID="viewController">
@@ -75,6 +75,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="SXe-bb-u8t" kind="show" id="WB7-Zo-bV0"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -83,11 +86,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="OyV-xj-eWI">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="FsQ-Oz-tsF">
-                            <connections>
-                                <segue destination="i0x-7c-hzf" kind="show" id="iS6-yu-cwU"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="FsQ-Oz-tsF"/>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KuF-yx-vxS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -153,7 +152,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bve-Ln-p0r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2244" y="161.46926536731635"/>
+            <point key="canvasLocation" x="3439" y="27"/>
         </scene>
     </scenes>
 </document>
