@@ -25,13 +25,12 @@
                                     <navigationItem id="HTn-dQ-qiw">
                                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="atV-UV-NI9">
                                             <connections>
-                                                <action selector="cancelWithSegue:" destination="i0x-7c-hzf" id="StE-Ea-2jG"/>
-                                                <segue destination="nw0-PZ-tLH" kind="unwind" identifier="cancelSegue" unwindAction="cancelWithSegue:" id="1Nt-J7-gfW"/>
+                                                <segue destination="nw0-PZ-tLH" kind="unwind" identifier="cancelSegue" unwindAction="cancelWithSegue:" id="J02-Vp-hx0"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="SC2-oy-aiU">
                                             <connections>
-                                                <segue destination="nw0-PZ-tLH" kind="unwind" unwindAction="doneWithSegue:" id="G8m-j6-3KV"/>
+                                                <segue destination="nw0-PZ-tLH" kind="unwind" identifier="doneSegue" unwindAction="doneWithSegue:" id="iNB-Ki-ojf"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -45,7 +44,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="CnA-Ar-l4S"/>
                     </view>
                     <toolbarItems/>

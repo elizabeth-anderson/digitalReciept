@@ -7,10 +7,10 @@
 //
 
 import UIKit
-
+// do folders ast, camera first
 class FoldersTableViewController: UITableViewController {
 
-    var  folders = [String]()
+    var folders = [String]()
     var newFolder: String = ""
     
     override func viewDidLoad() {
@@ -43,27 +43,26 @@ class FoldersTableViewController: UITableViewController {
     }
 
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
         let cell = tableView.dequeueReusableCell(withIdentifier: "folderCell", for: indexPath)
 
-     cell.textLabel!.text = folders[indexPath.row]
+        cell.textLabel!.text = folders[indexPath.row]
 
         return cell
     }
     
     
-    @IBAction func cancel(segue:UIStoryboardSegue)
-    {
+    @IBAction func cancel(segue:UIStoryboardSegue) {
         
     }
     
-    @IBAction func done(segue:UIStoryboardSegue)
-    {
-        var addFolderVC = segue.source as! addFolderViewController
-        newFolder = addFolderVC.name
-        
-        folders.append(newFolder)
+    @IBAction func done(segue: UIStoryboardSegue) {
+        let addFolderVC = segue.source as! addFolderViewController
+                newFolder = addFolderVC.name
+                folders.append(newFolder)
     }
+    
     
    
 //    @IBAction func done(segue:UIStoryboardSegue)
