@@ -67,7 +67,7 @@
             <point key="canvasLocation" x="2817" y="110"/>
         </scene>
         <!--Folders-->
-        <scene sceneID="q2f-gy-Feh">
+        <scene sceneID="hby-uq-efB">
             <objects>
                 <tableViewController title="Folders" id="wK6-hz-LV3" customClass="FoldersTableViewController" customModule="digitalReciept" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="6Rc-06-qWd">
@@ -82,6 +82,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="SXe-bb-u8t" kind="show" id="WB7-Zo-bV0"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
