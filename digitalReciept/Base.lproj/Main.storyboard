@@ -1,63 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AUv-ea-uqK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13770" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wK6-hz-LV3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13770"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Add Folder-->
-        <scene sceneID="fAA-Lm-MRq">
-            <objects>
-                <viewController title="Add Folder" id="i0x-7c-hzf" customClass="addFolderViewController" customModule="digitalReciept" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="JXp-hg-AWB">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KZF-lz-bnb">
-                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem id="HTn-dQ-qiw">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="atV-UV-NI9">
-                                            <connections>
-                                                <segue destination="nw0-PZ-tLH" kind="unwind" identifier="cancelSegue" unwindAction="cancelWithSegue:" id="J02-Vp-hx0"/>
-                                            </connections>
-                                        </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="SC2-oy-aiU">
-                                            <connections>
-                                                <segue destination="nw0-PZ-tLH" kind="unwind" identifier="doneSegue" unwindAction="doneWithSegue:" id="iNB-Ki-ojf"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LSf-xs-ztE">
-                                <rect key="frame" x="46" y="180" width="282" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="CnA-Ar-l4S"/>
-                    </view>
-                    <toolbarItems/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="folderName" destination="LSf-xs-ztE" id="CH6-VK-PJ8"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fJp-1a-pQC" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="nw0-PZ-tLH" userLabel="Exit" sceneMemberID="exit"/>
-            </objects>
-            <point key="canvasLocation" x="2406" y="109"/>
-        </scene>
         <!--Pictures View Controller-->
         <scene sceneID="IEa-6a-15D">
             <objects>
@@ -71,7 +23,11 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Title" id="seT-2J-Vus">
-                                        <barButtonItem key="rightBarButtonItem" title="Add" id="W0i-B4-HJj"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Add" id="W0i-B4-HJj">
+                                            <connections>
+                                                <action selector="addPhotoFromLibrary:" destination="gAy-ue-8nC" id="mYl-kE-WrC"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -102,12 +58,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="l4i-Ui-IEh"/>
                     <connections>
-                        <outlet property="picturesCollectionView" destination="adF-N3-NkH" id="iCt-Nq-RrB"/>
+                        <outlet property="picturesCell" destination="JLP-6u-Zrn" id="spK-QY-0Mo"/>
+                        <outlet property="picturesCollectionView" destination="adF-N3-NkH" id="nUG-PS-DXa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qiT-ec-d2v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3210" y="110"/>
+            <point key="canvasLocation" x="2817" y="110"/>
         </scene>
         <!--Folders-->
         <scene sceneID="q2f-gy-Feh">
@@ -133,11 +90,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="OyV-xj-eWI">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="FsQ-Oz-tsF">
-                            <connections>
-                                <segue destination="i0x-7c-hzf" kind="show" id="iS6-yu-cwU"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="FsQ-Oz-tsF"/>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KuF-yx-vxS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -163,6 +116,7 @@
         <!--Pictures View Controller-->
         <scene sceneID="3fh-ta-1Rs">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bve-Ln-p0r" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <collectionViewController id="SXe-bb-u8t" customClass="picturesViewController" customModule="digitalReciept" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Qcl-Uu-EB8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -200,10 +154,11 @@
                             <outlet property="delegate" destination="SXe-bb-u8t" id="5h5-hK-J0g"/>
                         </connections>
                     </collectionView>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bve-Ln-p0r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2244" y="161.46926536731635"/>
+            <point key="canvasLocation" x="2364" y="110"/>
         </scene>
     </scenes>
 </document>

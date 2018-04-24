@@ -10,7 +10,7 @@ import UIKit
 import Photos
 class picturesViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout
 {
-    let image = [UIImage]()
+//    let image = [UIImage]()
     @IBOutlet weak var picturesCollectionView: UICollectionView!
     var imageArray = [UIImage]()
     @IBOutlet weak var picturesCell: UICollectionViewCell!
@@ -19,7 +19,12 @@ class picturesViewController: UICollectionViewController, UICollectionViewDelega
         super.viewDidLoad()
         grabPhotos()
     }
-func grabPhotos()
+    @IBAction func addPhotoFromLibrary(_ sender: Any)
+    {
+        grabPhotos()
+    }
+    
+    func grabPhotos()
     {
         let imgManager = PHImageManager.default()
         let requestOptions = PHImageRequestOptions()

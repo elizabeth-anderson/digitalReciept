@@ -15,7 +15,6 @@
 		3FD1520C207BD89300835608 /* digitalRecieptUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD1520B207BD89300835608 /* digitalRecieptUITests.swift */; };
 		3FD1521E207E7C1400835608 /* picturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD1521D207E7C1400835608 /* picturesViewController.swift */; };
 		3FD152202085156600835608 /* FoldersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD1521F2085156600835608 /* FoldersTableViewController.swift */; };
-		3FD15222208516B100835608 /* addFolderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD15221208516B100835608 /* addFolderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +49,6 @@
 		3FD1520D207BD89300835608 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FD1521D207E7C1400835608 /* picturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = picturesViewController.swift; sourceTree = "<group>"; };
 		3FD1521F2085156600835608 /* FoldersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoldersTableViewController.swift; sourceTree = "<group>"; };
-		3FD15221208516B100835608 /* addFolderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addFolderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +102,6 @@
 				3FD151EB207BD89300835608 /* AppDelegate.swift */,
 				3FD151EF207BD89300835608 /* Main.storyboard */,
 				3FD1521F2085156600835608 /* FoldersTableViewController.swift */,
-				3FD15221208516B100835608 /* addFolderViewController.swift */,
 				3FD1521D207E7C1400835608 /* picturesViewController.swift */,
 				3FD151F2207BD89300835608 /* Assets.xcassets */,
 				3FD151F4207BD89300835608 /* LaunchScreen.storyboard */,
@@ -265,7 +262,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FD15222208516B100835608 /* addFolderViewController.swift in Sources */,
 				3FD152202085156600835608 /* FoldersTableViewController.swift in Sources */,
 				3FD1521E207E7C1400835608 /* picturesViewController.swift in Sources */,
 				3FD151EC207BD89300835608 /* AppDelegate.swift in Sources */,
