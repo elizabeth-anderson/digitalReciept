@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24AC9305208FA14D00F9F72D /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AC9304208FA14D00F9F72D /* CameraViewController.swift */; };
 		3FD151EC207BD89300835608 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD151EB207BD89300835608 /* AppDelegate.swift */; };
 		3FD151F1207BD89300835608 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FD151EF207BD89300835608 /* Main.storyboard */; };
 		3FD151F3207BD89300835608 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FD151F2207BD89300835608 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		24AC9304208FA14D00F9F72D /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		3FD151E8207BD89300835608 /* digitalReciept.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = digitalReciept.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FD151EB207BD89300835608 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FD151F0207BD89300835608 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				3FD1521F2085156600835608 /* FoldersTableViewController.swift */,
 				3FD15221208516B100835608 /* addFolderViewController.swift */,
 				3FD1521D207E7C1400835608 /* picturesViewController.swift */,
+				24AC9304208FA14D00F9F72D /* CameraViewController.swift */,
 				3FD151F2207BD89300835608 /* Assets.xcassets */,
 				3FD151F4207BD89300835608 /* LaunchScreen.storyboard */,
 				3FD151F7207BD89300835608 /* Info.plist */,
@@ -266,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FD15222208516B100835608 /* addFolderViewController.swift in Sources */,
+				24AC9305208FA14D00F9F72D /* CameraViewController.swift in Sources */,
 				3FD152202085156600835608 /* FoldersTableViewController.swift in Sources */,
 				3FD1521E207E7C1400835608 /* picturesViewController.swift in Sources */,
 				3FD151EC207BD89300835608 /* AppDelegate.swift in Sources */,
