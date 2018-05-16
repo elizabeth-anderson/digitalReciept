@@ -40,7 +40,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         picker.sourceType = .camera
         present(picker, animated: true, completion: nil)
     }
-    
+    //lalalalal
     // enables choising an image 
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any])
     {
