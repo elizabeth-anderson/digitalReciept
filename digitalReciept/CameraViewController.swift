@@ -13,8 +13,8 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
 
     @IBOutlet weak var photoLibary: UIButton!
     @IBOutlet weak var cameraButton: UIButton!
-    //@IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var imageView: UIImageView!
+    //@IBOutlet weak var collectionView: UICollectionView!
     
     
     
@@ -51,8 +51,8 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     // enables choising an image 
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any])
     {
-      //  collectionView.image = info[UIImagePickerControllerOriginalImage] as? UIImage;dismiss(animated: true, completion: nil)
-      collectionView.cell = info[UIImagePickerControllerOriginalImage] as? UIImage;dismiss(animated: true, completion: nil)
+      imageView.image = info[UIImagePickerControllerOriginalImage] as? UIImage;dismiss(animated: true, completion: nil)
+     
       
     }
 
