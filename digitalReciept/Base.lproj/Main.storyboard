@@ -25,9 +25,9 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VGu-H1-liV" id="Mt9-tS-K6q">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <color key="backgroundColor" red="0.92854601144790649" green="0.97033983469009399" blue="0.31788328289985657" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" red="0.71683669090270996" green="0.86368292570114136" blue="0.93642467260360718" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.91201949119567871" green="0.31626498699188232" blue="0.75735563039779663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.71683669090270996" green="0.86368292570114136" blue="0.93642467260360718" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <segue destination="Mlj-YK-0jA" kind="showDetail" id="vua-1x-y7F"/>
                                 </connections>
@@ -49,57 +49,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KuF-yx-vxS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1940" y="110.19490254872565"/>
-        </scene>
-        <!--Item-->
-        <scene sceneID="3fh-ta-1Rs">
-            <objects>
-                <collectionViewController id="SXe-bb-u8t" customClass="picturesViewController" customModule="digitalReciept" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Qcl-Uu-EB8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dPz-8J-0An">
-                            <size key="itemSize" width="134" height="133"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="bl9-a2-tSK">
-                                <rect key="frame" x="0.0" y="0.0" width="134" height="133"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="134" height="133"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qN7-mE-gv2">
-                                            <rect key="frame" x="0.0" y="0.0" width="134" height="133"/>
-                                        </imageView>
-                                    </subviews>
-                                </view>
-                                <constraints>
-                                    <constraint firstItem="qN7-mE-gv2" firstAttribute="height" secondItem="bl9-a2-tSK" secondAttribute="height" id="H8j-sc-NDW"/>
-                                    <constraint firstItem="qN7-mE-gv2" firstAttribute="centerY" secondItem="bl9-a2-tSK" secondAttribute="centerY" id="iRF-H3-beh"/>
-                                    <constraint firstItem="qN7-mE-gv2" firstAttribute="width" secondItem="bl9-a2-tSK" secondAttribute="width" id="qe5-BR-Oif"/>
-                                    <constraint firstItem="qN7-mE-gv2" firstAttribute="centerX" secondItem="bl9-a2-tSK" secondAttribute="centerX" id="tls-gl-mEx"/>
-                                </constraints>
-                            </collectionViewCell>
-                        </cells>
-                        <connections>
-                            <outlet property="dataSource" destination="SXe-bb-u8t" id="9id-dY-16k"/>
-                            <outlet property="delegate" destination="SXe-bb-u8t" id="eWw-bk-z7z"/>
-                        </connections>
-                    </collectionView>
-                    <tabBarItem key="tabBarItem" title="Item" id="MF0-Ev-PRP"/>
-                    <toolbarItems/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="picturesCollectionView" destination="Qcl-Uu-EB8" id="xvu-NH-X0h"/>
-                    </connections>
-                </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bve-Ln-p0r" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2817" y="512"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Vy4-i1-K7q">
@@ -128,7 +77,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qDU-q8-Fvs">
-                                <rect key="frame" x="22" y="39" width="54" height="30"/>
+                                <rect key="frame" x="18" y="63" width="54" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Camera"/>
                                 <connections>
@@ -136,7 +85,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LIy-4d-5VG">
-                                <rect key="frame" x="265" y="39" width="92" height="30"/>
+                                <rect key="frame" x="267" y="63" width="92" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Photo Library"/>
                                 <connections>

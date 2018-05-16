@@ -45,7 +45,7 @@ class FoldersTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
     }
-    
+    // enables editing and adding to the table view
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             let folder = folders.remove(at: indexPath.row)
@@ -57,7 +57,7 @@ class FoldersTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
     }
-    
+    // allows moving rows
     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
         return true
     }
@@ -69,7 +69,7 @@ class FoldersTableViewController: UITableViewController {
         insertNewFolder()
         tableView.reloadData()
     }
-    
+    //alert that adds a folder with title 
      func insertNewFolder()
     {
         let alert = UIAlertController(title: "Add Folder", message: nil, preferredStyle: .alert)

@@ -39,7 +39,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         picker.sourceType = .photoLibrary
         present(picker, animated: true, completion: nil)
     }
-   
+   // calls camera button
     @IBAction func cameraButtonAction(sender: UIButton)
     {
         let picker = UIImagePickerController()
@@ -47,6 +47,8 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         picker.sourceType = .camera
         present(picker, animated: true, completion: nil)
     }
+    
+    // enables choising an image 
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any])
     {
       //  collectionView.image = info[UIImagePickerControllerOriginalImage] as? UIImage;dismiss(animated: true, completion: nil)
