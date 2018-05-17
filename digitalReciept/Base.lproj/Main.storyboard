@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13770" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yAr-Cd-nMm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yAr-Cd-nMm">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13770"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -29,7 +29,7 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.71683669090270996" green="0.86368292570114136" blue="0.93642467260360718" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
-                                    <segue destination="Mlj-YK-0jA" kind="showDetail" id="vua-1x-y7F"/>
+                                    <segue destination="Mlj-YK-0jA" kind="show" id="VVU-4Q-8u6"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -100,6 +100,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="VKL-qC-g7s"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="8fs-9j-kbg"/>
                     <connections>
                         <outlet property="cameraButton" destination="qDU-q8-Fvs" id="Ia9-cV-yma"/>
                         <outlet property="imageView" destination="nKN-y1-VAI" id="Wq0-1W-ZwM"/>
@@ -108,7 +109,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s3C-VY-Pyw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2840.8000000000002" y="81.409295352323838"/>
+            <point key="canvasLocation" x="2790" y="110"/>
         </scene>
     </scenes>
 </document>
