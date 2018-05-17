@@ -47,11 +47,10 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         picker.sourceType = .camera
         present(picker, animated: true, completion: nil)
     }
-    //lalalalal
     // enables choising an image 
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any])
     {
-      //  collectionView.image = info[UIImagePickerControllerOriginalImage] as? UIImage;dismiss(animated: true, completion: nil)
+      imageView.image = info[UIImagePickerControllerOriginalImage] as? UIImage;dismiss(animated: true, completion: nil)
       //collectionView.cell = info[UIImagePickerControllerOriginalImage] as? UIImage;dismiss(animated: true, completion: nil)
       
     }
