@@ -81,30 +81,36 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qDU-q8-Fvs">
-                                <rect key="frame" x="18" y="63" width="54" height="30"/>
+                                <rect key="frame" x="16" y="79" width="54" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Camera"/>
+                                <state key="normal" title="Camera">
+                                    <color key="titleColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="cameraButtonActionWithSender:" destination="Mlj-YK-0jA" eventType="touchUpInside" id="4aH-pz-8rj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LIy-4d-5VG">
-                                <rect key="frame" x="267" y="63" width="92" height="30"/>
+                                <rect key="frame" x="267" y="79" width="92" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Photo Library"/>
+                                <state key="normal" title="Photo Library">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="photoLibraryActionWithSender:" destination="Mlj-YK-0jA" eventType="touchUpInside" id="T7X-Wp-3DK"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nKN-y1-VAI">
-                                <rect key="frame" x="34" y="117" width="296" height="419"/>
+                                <rect key="frame" x="39" y="137" width="296" height="419"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="VKL-qC-g7s"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="8fs-9j-kbg"/>
+                    <navigationItem key="navigationItem" title="My Reciepts" id="8fs-9j-kbg"/>
                     <connections>
                         <outlet property="cameraButton" destination="qDU-q8-Fvs" id="Ia9-cV-yma"/>
                         <outlet property="imageView" destination="nKN-y1-VAI" id="Wq0-1W-ZwM"/>
