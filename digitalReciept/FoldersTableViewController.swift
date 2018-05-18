@@ -17,6 +17,8 @@ class FoldersTableViewController: UITableViewController {
         super.viewDidLoad()
          folders = ["Resturants","Travel","Shopping"]
         self.navigationItem.leftBarButtonItem = self.editButtonItem
+        editButtonItem.tintColor = UIColor.black
+      
     }
 
     override func didReceiveMemoryWarning() {
