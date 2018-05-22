@@ -17,7 +17,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     //@IBOutlet weak var collectionView: UICollectionView!
     
     
-    
+     let picker = UIImagePickerController()
     
     override func viewDidLoad()
     {
@@ -34,7 +34,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     
     @IBAction func photoLibraryAction(sender:UIButton)
     {
-        let picker = UIImagePickerController()
+//        let picker = UIImagePickerController()
         picker.delegate = self
         picker.sourceType = .photoLibrary
         present(picker, animated: true, completion: nil)
@@ -42,15 +42,28 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
    // calls camera button
     @IBAction func cameraButtonAction(sender: UIButton)
     {
-        let picker = UIImagePickerController()
+//        let picker = UIImagePickerController()
         picker.delegate = self
         picker.sourceType = .camera
-        present(picker, animated: true, completion: nil)
+//        present(picker, animated: true, completion: nil)
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera)
+        {
+            picker.sourceType = UIImagePickerControllerSourceType.camera
+            present(picker, animated: true, completion: nil)
+        }
+        
+        
     }
     // enables choising an image 
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any])
     {
-      imageView.image = info[UIImagePickerControllerOriginalImage] as? UIImage;dismiss(animated: true, completion: nil)
+        //let picker = UIImagePickerController()
+        picker.dismiss(animated: true)
+        {
+            let selectedImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+            self.imageView.image = selectedImage
+        }
+//      imageView.image = info[UIImagePickerControllerOriginalImage] as? UIImage;dismiss(animated: true, completion: nil)
       //collectionView.cell = info[UIImagePickerControllerOriginalImage] as? UIImage;dismiss(animated: true, completion: nil)
       
     }
